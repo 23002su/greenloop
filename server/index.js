@@ -80,6 +80,6 @@ app.get("/api/messages", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Backend démarré : http://localhost:3000");
-});
+// app.listen(3000, () => {
+//   console.log("Backend démarré : http://localhost:3000");
+// });
