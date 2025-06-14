@@ -262,14 +262,13 @@ const EnergyMarket = () => {
           <span className="energy-navbar__logo-text">SolarTrade</span>
         </div>
         <div className="energy-navbar__tabs">
-          <button className={`energy-navbar__tab${activeTab === "offers" ? " energy-navbar__tab--active" : ""}`} onClick={() => setActiveTab("offers")}>Marketplace</button>
+          <button className={`energy-navbar__tab${activeTab === "offers" ? " energy-navbar__tab--active" : ""}`} onClick={() => setActiveTab("offers")}>Offers</button>
           <button className={`energy-navbar__tab${activeTab === "sell" ? " energy-navbar__tab--active" : ""}`} onClick={() => setActiveTab("sell")}>Sell</button>
           <button className={`energy-navbar__tab${activeTab === "buy" ? " energy-navbar__tab--active" : ""}`} onClick={() => setActiveTab("buy")}>Buy</button>
         </div>
         <div className="energy-navbar__user">
           <FaUserCircle className="energy-navbar__user-icon" />
           <span className="energy-navbar__user-name">John Solar</span>
-          <span className="energy-navbar__user-wallet">0x1234...5678</span>
         </div>
       </nav>
       <div className="energy-tabs-content">

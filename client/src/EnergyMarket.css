@@ -135,13 +135,16 @@
 
 /* --- Navbar/Header Styles --- */
 .energy-navbar {
+  padding: 8px 4vw;
+  max-width: 100%;
+  margin: 0 auto 18px auto;
+  box-sizing: border-box;
   width: 100%;
   height: auto;
   background: linear-gradient(90deg, #3d5c1e 0%, #7a944b 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   position: sticky;
   top: 0;
@@ -153,30 +156,33 @@
   align-items: center;
   background: #e6c200;
   border-radius: 12px;
-  padding: 0 0 0 6px;
-  height: 38px;
+  padding: 0 0 0 4px;
+  height: 34px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   justify-content: center;
 }
+
 .energy-navbar__logo1 {
   display: flex;
   align-items: center;
   border-radius: 12px;
-  padding: 0 4px 0 6px;
-  height: 38px;
+  padding: 0 2px 0 4px;
+  height: 34px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  gap: 4px;
+  gap: 2px;
 }
+
 .energy-navbar__logo-icon {
   font-size: 26px;
   margin-right: 8px;
   color: #234c1e;
 }
+
 .energy-navbar__logo-text {
   font-weight: 700;
   font-size: 20px;
@@ -188,6 +194,7 @@
   align-items: center;
   gap: 16px;
 }
+
 .energy-navbar__tab {
   background: none;
   border: none;
@@ -201,12 +208,14 @@
   outline: none;
   position: relative;
 }
+
 .energy-navbar__tab--active {
   background: #e6c200;
   color: #234c1e;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   border: 2px solid #e6c200;
 }
+
 .energy-navbar__tab:not(.energy-navbar__tab--active):hover {
   background: rgba(255,255,255,0.10);
 }
@@ -223,15 +232,18 @@
   font-weight: 500;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
+
 .energy-navbar__user-icon {
   font-size: 22px;
   margin-right: 4px;
   color: #fff;
 }
+
 .energy-navbar__user-name {
   font-weight: 600;
   margin-right: 6px;
 }
+
 .energy-navbar__user-wallet {
   font-size: 13px;
   background: #e6c200;
@@ -242,29 +254,10 @@
   font-family: monospace;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
   .energy-navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 8px;
-    gap: 8px;
-  }
-  .energy-navbar__logo {
-    margin-bottom: 6px;
-    font-size: 18px;
-    height: 38px;
-    padding: 0 10px 0 6px;
-  }
-  .energy-navbar__tabs {
-    gap: 6px;
-  }
-  .energy-navbar__tab {
-    font-size: 15px;
-    padding: 7px 12px;
-  }
-  .energy-navbar__user {
-    font-size: 13px;
-    padding: 4px 10px 4px 6px;
+    max-width: 98vw;
+    padding: 8px 2vw;
   }
 }
 
@@ -272,8 +265,8 @@
 .energy-messages-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-  margin: 32px 0 0 0;
+  gap: 24px;
+  margin: 40px 0 40px 0;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -293,6 +286,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .energy-message-card:hover {
   box-shadow: 0 8px 24px rgba(0,0,0,0.13);
 }
@@ -304,11 +298,13 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .energy-message-card__title {
   font-weight: 700;
   font-size: 19px;
   color: #234c1e;
 }
+
 .energy-message-card__rating {
   color: #e6c200;
   font-size: 17px;
@@ -324,12 +320,14 @@
   flex-direction: column;
   gap: 8px;
 }
+
 .energy-message-card__row {
   display: flex;
   align-items: center;
   gap: 18px;
   margin-bottom: 2px;
 }
+
 .energy-message-card__location {
   color: #7a944b;
   font-size: 15px;
@@ -337,6 +335,7 @@
   align-items: center;
   gap: 5px;
 }
+
 .energy-message-card__energy {
   color: #234c1e;
   font-size: 28px;
@@ -345,6 +344,7 @@
   align-items: baseline;
   gap: 7px;
 }
+
 .energy-message-card__price {
   color: #338a36;
   font-size: 26px;
@@ -353,18 +353,21 @@
   align-items: baseline;
   gap: 7px;
 }
+
 .energy-message-card__label {
   color: #888;
   font-size: 13px;
   font-weight: 500;
   margin-left: 2px;
 }
+
 .energy-message-card__total {
   color: #234c1e;
   font-size: 18px;
   font-weight: 700;
   margin-top: 8px;
 }
+
 .energy-message-card__time {
   color: #888;
   font-size: 15px;
@@ -391,6 +394,7 @@
   gap: 10px;
   transition: background 0.2s;
 }
+
 .energy-message-card__button:hover {
   background: linear-gradient(90deg, #3d5c1e 0%, #7a944b 100%);
 } 
